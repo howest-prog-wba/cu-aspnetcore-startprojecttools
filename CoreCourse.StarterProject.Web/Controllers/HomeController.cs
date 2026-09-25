@@ -14,6 +14,10 @@ namespace CoreCourse.StarterProject.Web.Controllers
         {
             return View();
         }
+        public IActionResult Search(string searchKey)
+        {
+            return View();
+        }
 
         public IActionResult About()
         {
@@ -21,6 +25,13 @@ namespace CoreCourse.StarterProject.Web.Controllers
 
             return View();
         }
+        public IActionResult CustomError()
+        {
+            ViewData["Message"] = "WATCH me ma! No hands!";
+
+            return View();
+        }
+
 
         public IActionResult Contact()
         {
